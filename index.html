@@ -1,12 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Цифровое агентство Kronix | Веб-разработка и дизайн</title>
+    <meta
+      name="description"
+      content="Kronix — цифровое агентство. Создаём мощные веб-сайты на Webflow, увеличиваем доходы и обеспечиваем устойчивый рост вашего бизнеса." />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo">
+          Kro<span class="header__logo-text">nix</span>
+        </a>
+        <button
+          class="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="menu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Процесс</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Вопросы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Воплощение вашей мечты в
+              <span class="hero__title-accent">реальность</span>
+            </h1>
+            <p class="hero__subtitle text-lg">
+              Мы увеличиваем доходы и обеспечиваем устойчивый долгосрочный рост
+              вашего бизнеса с помощью мощных веб-сайтов Webflow.
+            </p>
+            <a href="#" class="btn hero__btn">Обсудить задачу</a>
+          </div>
+          <div class="hero__glow"></div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="brands__container">
+          <p class="brands__title">Нам доверяют</p>
+          <div class="brands__list-container">
+            <ul class="brands__list">
+              <li class="brands__item">
+                <img
+                  class="brands__logo"
+                  src="./images/brands-logo/layers.svg"
+                  alt="логотип lauers" />
+              </li>
+              <li class="brands__item">
+                <img
+                  class="brands__logo"
+                  src="./images/brands-logo/quotient.svg"
+                  alt="логотип quotient" />
+              </li>
+              <li class="brands__item">
+                <img
+                  class="brands__logo"
+                  src="./images/brands-logo/circooles.svg"
+                  alt="логотип circooles" />
+              </li>
+              <li class="brands__item">
+                <img
+                  class="brands__logo"
+                  src="./images/brands-logo/hourglass.svg"
+                  alt="логотип hourglass" />
+              </li>
+              <li class="brands__item">
+                <img
+                  class="brands__logo"
+                  src="./images/brands-logo/command_r.svg"
+                  alt="логотип command-r" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="features section__top-margin">
+        <div class="container features__container">
+          <p class="features__label sub-title">Как мы работаем</p>
+          <div class="features__wrapper">
+            <h2 class="features__title title">
+              Получите выделенную команду дизайнеров за долю обычной стоимости
+            </h2>
+            <div class="features__content">
+              <p class="features__text text-lg">
+                Развивайте бренд с высококачественным дизайном за фиксированную
+                ежемесячную плату. Работайте со старшими дизайнерами и делайте
+                столько запросов, сколько нужно - без ограничений.
+              </p>
+              <a href="#" class="features__btn btn">Смотреть тарифы</a>
+            </div>
+          </div>
+          <div class="features__cards section__top-margin section__bottom-margin">
+            <article class="features-card">
+              <img class="features-icon" src="images/features-icon/rocket.svg" alt="иконка ракеты" />
+              <h3 class="features-card__title">Оформите подписку и начинайте</h3>
+              <p class="features-card__text text-lg">
+                Отправляйте сколько угодно задач без ограничений по бюджету
+              </p>
+            </article>
+            <article class="features-card">
+              <img class="features-icon" src="images/features-icon/pen.svg" alt="иконка ракеты" />
+              <h3 class="features-card__title">Готовый дизайн точно в срок</h3>
+              <p class="features-card__text text-lg">
+                Дизайнеры берут в работу и сдают результат за несколько дней
+              </p>
+            </article>
+            <article class="features-card">
+              <img class="features-icon" src="images/features-icon/arrows.svg" alt="иконка ракеты" />
+              <h3 class="features-card__title">Правки без проблем</h3>
+              <p class="features-card__text text-lg">
+                Индивидуальный дизайн, быстрые ответы и неограниченные правки
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="works section__top-margin">
+        <div class="works__container">
+          <h2 class="works__title">Наши работы</h2>
+          <p class="works__text">Мы помогаем клиентам увеличивать прибыль с помощью понятного и профессионального дизайна.</p>
+          <a href="#" class="works__btn btn">Показать больше</a>
+          <div class="works__wrapper"></div>
+        </div>
+      </section>
+      <div style="height: 400px; background-color: #111;"></div>
+    </main>
+  </body>
 </html>

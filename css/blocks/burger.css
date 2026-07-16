@@ -1,0 +1,37 @@
+.burger {
+  display: none; /* На десктопе скрыт */
+  flex-direction: column;
+  gap: 6px;
+  width: 25px;
+  padding: 0;
+  cursor: pointer;
+  z-index: var(--layer-3);
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-white);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* ===== АНИМАЦИЯ В КРЕСТИК ===== */
+.burger--open .burger__line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger--open .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger--open .burger__line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 575px) {
+  .burger {
+    display: flex;
+  }
+}

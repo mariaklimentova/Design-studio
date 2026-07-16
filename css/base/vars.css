@@ -1,0 +1,42 @@
+:root {
+  /* Шрифты */
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Nunito", sans-serif;
+
+  /* Цвета */
+  --color-accent: #b9fd50; /* салатовый — кнопки, лого, выделения */
+  --color-bg-green-dark: #1e2008; /* фон секций зеленый */
+  --color-bg-gray-dark: #222222; /* фон секций серый */
+  --color-dark: #111204; /* тёмный фон, текст */
+  --color-white: #ffffff; /* заголовки, светлый текст */
+  --color-gray: #9593a4; /* второстепенный серый */
+  --color-text-secondary: #44453a; /* ещё второстепенный */
+  --color-dark-text: #14142b; /* тёмный текст */
+  --color-bg-overlay: #111204d9; /* прозрачный темный фон*/
+
+  /* Тени */
+  --shadow-btn-glow: 0 0 6px 2px var(--color-accent);
+  --shadow-accent-glow: 0 0 40px 0 var(--color-accent);
+  /* --shadow-disabled-glow: 0 0 6px 2px var(--disabled-glow-color); */
+
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 20px;
+
+  /* Переходы */
+  --transition: 0.3s ease;
+
+  /* скругления */
+  --radius-md: 6px; /* кнопки */
+  --radius-lg: 8px; /* карточки, блок технологий */
+  --radius-xl: 14px; /* aside блок */
+
+  /* слои */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+
+
+}

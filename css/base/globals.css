@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth; /* Плавная прокрутка при клике на ссылки-якоря */
+  scroll-padding-top: 80px; /* Отступ сверху, чтобы шапка не перекрывала заголовок секции */
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  /* min-width:575px, max-width:1440px */
+  font-size: clamp(12px, 0.584rem + 0.46vw, 16px);
+  line-height: 140%;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  min-width: 375px;
+}
+
+body.no-scroll {
+  overflow-y: hidden; /* Запрет вертикального скролла (бургер-меню открыто) */
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+.section__top-margin {
+  /* min-width:575px, max-width:1440px */
+  margin-top: clamp(60px, 2.614rem + 4.85vw, 100px);
+}
+
+.section__bottom-margin {
+  /* min-width:575px, max-width:1440px */
+  margin-bottom: clamp(60px, 2.614rem + 4.85vw, 100px);
+}
+
+a {
+  font-family: var(--font-body);
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* ===== ФОКУС ДЛЯ ДОСТУПНОСТИ ===== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 1px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.btn {
+  /* min-width:375px, max-width:1400px */
+  padding: clamp(15px, 0.795rem + 0.61vw, 20px);
+  background-color: var(--color-accent);
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+  font-weight: 500;
+  line-height: 137%;
+}
+
+@media (any-hover: hover) {
+  .btn:hover {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-btn-glow);
+  }
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+   /* min-width:375px, max-width:1400px */
+  font-size: clamp(20px, 0.682rem + 2.42vw, 40px);
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+.sub-title {
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.text-md {
+  color: var(--color-gray);
+}
+
+.text-lg {
+  color: var(--color-gray);
+   /* min-width:375px, max-width:1400px */
+  font-size: clamp(16px, 0.886rem + 0.48vw, 20px);
+  line-height: 120%;
+}

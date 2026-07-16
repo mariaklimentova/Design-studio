@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 20px;
+  background: transparent;
+  z-index: var(--layer-1);
+  transition: background var(--transition), box-shadow var(--transition);
+}
+
+.header--scrolled {
+  background: var(--transparent-dark); /* тёмный фон #111204 с прозрачностью */
+  box-shadow: 0 4px 20px var(--color-accent);
+  backdrop-filter: blur(10px);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  /* min-width:575px, max-width:1440px */
+  font-size: clamp(30px, 1.46rem + 1.16vw, 40px);
+  line-height: 107%;
+  letter-spacing: -0.03em;
+}
+
+.header__logo-text {
+    color: var(--color-accent);
+}
+
