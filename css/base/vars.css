@@ -17,7 +17,7 @@
   /* Тени */
   --shadow-btn-glow: 0 0 6px 2px var(--color-accent);
   --shadow-accent-glow: 0 0 40px 0 var(--color-accent);
-  /* --shadow-disabled-glow: 0 0 6px 2px var(--disabled-glow-color); */
+  --shadow-white-btn: 0 0 6px 2px var(--color-dark);
 
   /* container */
   --container-width: 1240px;
@@ -37,6 +37,4 @@
   --layer-1: 1;
   --layer-2: 2;
   --layer-3: 3;
-
-
 }
