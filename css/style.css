@@ -3,6 +3,7 @@
 @import "./base/vars.css";
 @import "./base/normalize.css";
 @import "./base/globals.css";
+@import "./base/animation.css";
 
 /* blocks */
 @import "./blocks/header.css";
@@ -12,3 +13,4 @@
 @import "./blocks/brands.css";
 @import "./blocks/features.css";
 @import "./blocks/works.css";
+@import "./blocks/gallery-modal.css";

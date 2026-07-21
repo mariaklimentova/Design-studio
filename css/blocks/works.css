@@ -1,0 +1,111 @@
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: var(--color-white);
+}
+
+@media (width > 992px ) {
+  .gallery__container {
+  padding-bottom: 10%;
+}
+}
+
+@media (width < 992px ) {
+  .gallery__container {
+  padding-bottom: 17%;
+}
+}
+
+.gallery__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 50px;
+  /* min-width:375px, max-width:1400px */
+  gap: clamp(15px, 0.71rem + 1.14vw, 25px);
+}
+
+.gallery__title {
+  color: var(--color-dark);
+}
+
+.gallery__text {
+  color: var(--color-bg-overlay);
+  max-width: 50%;
+  text-align: center;
+}
+
+.gallery__btn {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-dark);
+}
+
+@media (any-hover: hover) {
+  .gallery__btn:hover {
+    box-shadow: var(--shadow-white-btn);
+  }
+}
+
+.gallery__wrapper {
+  width: min(1400px, 100% - 5px * 2);
+}
+
+.gallery__wrapper {
+  display: grid;
+  /* min-width:375px, max-width:1400px */
+  gap: clamp(10px, 0.307rem + 1.59vw, 24px);
+}
+
+@media (width >= 991px) {
+  .gallery__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width < 991px) {
+  .gallery__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width < 767px) {
+  .gallery__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gallery__card {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  --shift: translateY(0);
+  transform: var(--shift);
+  transition: all 0.4s ease;
+}
+
+@media (width >= 991px) {
+  .gallery__card:nth-child(4n + 1),
+  .gallery__card:nth-child(4n + 3) {
+    --shift: translateY(33%);
+  }
+}
+
+@media (767px < width < 991px) {
+  .gallery__card:nth-child(3n + 1),
+  .gallery__card:nth-child(3n + 3) {
+    --shift: translateY(33%);
+  }
+}
+
+@media (width < 767px) {
+  .gallery__card:nth-child(2n + 1) {
+    --shift: translateY(33%);
+  }
+}
+
+.gallery__card:hover {
+  transform: var(--shift) scale(1.05);
+}

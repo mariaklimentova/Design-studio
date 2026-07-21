@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+      defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -157,15 +160,87 @@
           </div>
         </div>
       </section>
-      <section class="works section__top-margin">
-        <div class="works__container">
-          <h2 class="works__title">Наши работы</h2>
-          <p class="works__text">Мы помогаем клиентам увеличивать прибыль с помощью понятного и профессионального дизайна.</p>
-          <a href="#" class="works__btn btn">Показать больше</a>
-          <div class="works__wrapper"></div>
+      <section class="gallery section__top-margin">
+        <div class="gallery__container">
+          <div class="gallery__content-wrapper container">
+            <h2 class="gallery__title title">Наши работы</h2>
+            <p class="gallery__text text-lg">
+              Мы помогаем клиентам увеличивать прибыль с помощью понятного и
+              профессионального дизайна.
+            </p>
+            <a href="#" class="gallery__btn btn">Показать больше</a>
+          </div>
+          <div class="gallery__wrapper">
+            <img
+              loading="lazy"
+              src="images/gallery/EDO.webp"
+              alt="art-композиция edo"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/dfat.webp"
+              alt="art-композиция draft"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/key.webp"
+              alt="art-композиция key"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/oxfam.webp"
+              alt="art-композиция oxfam"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/cvgt.webp"
+              alt="art-композиция swgt"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/dropbottle.webp"
+              alt="art-композиция dropbottle"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/map.webp"
+              alt="art-композиция map"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/unwrapped.webp"
+              alt="art-композиция unwrapped"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/RWH.webp"
+              alt="art-композиция rwh"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/Ader.webp"
+              alt="art-композиция ader"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/welcome-home-project.webp"
+              alt="art-композиция welcome-home"
+              class="gallery__card" />
+            <img
+              loading="lazy"
+              src="images/gallery/bluegreen.webp"
+              alt="art-композиция bluegreen"
+              class="gallery__card" />
+          </div>
         </div>
+        <!-- Модальное окно -->
+        <dialog class="gallery-modal modal-overlay" id="imageModal">
+          <div class="modal-content">
+            <img src="" alt="Увеличенное изображение" id="modalImage" />
+          </div>
+        </dialog>
       </section>
-      <div style="height: 400px; background-color: #111;"></div>
+      <div style="height: 400px; background-color: #111"></div>
     </main>
   </body>
 </html>
