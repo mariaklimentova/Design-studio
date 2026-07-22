@@ -1,0 +1,17 @@
+.services__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-width:575px, max-width:1440px */
+  gap: clamp(10px, 0.398rem + 1.14vw, 20px);
+}
+
+.servises__btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* min-width:575px, max-width:1440px */
+  padding-top: clamp(20px, 0.909rem + 1.7vw, 35px);
+  /* min-width:575px, max-width:1440px */
+  gap: clamp(5px, 0.199rem + 0.57vw, 10px);
+}

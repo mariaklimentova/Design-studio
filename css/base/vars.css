@@ -13,6 +13,7 @@
   --color-text-secondary: #44453a; /* ещё второстепенный */
   --color-dark-text: #14142b; /* тёмный текст */
   --color-bg-overlay: #111204d9; /* прозрачный темный фон*/
+  --color-green-dark-overlay: #b9fd5017; /* прозрачный зеленый */
 
   /* Тени */
   --shadow-btn-glow: 0 0 6px 2px var(--color-accent);

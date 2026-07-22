@@ -16,7 +16,7 @@ min-width: 40dvw;
 min-height: auto;
 }
 
-.modal-content {
+.gallery__modal-content {
   position: relative;
   display: flex;
   justify-content: center;
